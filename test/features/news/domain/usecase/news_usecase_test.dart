@@ -31,11 +31,11 @@ void main() {
       ),
     );
 
-    final tes = await useCase.call(
+    final test = await useCase.call(
       NewsListParamRequest(query: '', page: 1),
     );
 
-    tes.map(
+    test.map(
       success: (data) {
         expect(
           data.data?.articles.length,

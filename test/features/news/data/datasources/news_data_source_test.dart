@@ -32,12 +32,12 @@ void main() {
       ),
     );
 
-    final tes = await dataSource.getNewsList(
+    final test = await dataSource.getNewsList(
       query: 'android',
       page: 1,
     );
 
-    tes.map(
+    test.map(
       success: (data) {
         expect(
           data.data?.articles?.length,
@@ -65,12 +65,12 @@ void main() {
       ),
     );
 
-    final tes = await dataSource.getNewsList(
+    final test = await dataSource.getNewsList(
       query: 'android',
       page: 1,
     );
 
-    tes.map(
+    test.map(
       success: (data) {},
       failure: (error) {
         expect(

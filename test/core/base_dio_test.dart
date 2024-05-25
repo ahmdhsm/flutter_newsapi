@@ -21,11 +21,11 @@ void main() {
       ),
     );
 
-    final tes = await baseDio.get(
+    final test = await baseDio.get(
       url: '',
     );
 
-    tes.map(
+    test.map(
       success: (data) {
         expect(
           data.data.data,
@@ -52,11 +52,11 @@ void main() {
       ),
     );
 
-    final tes = await baseDio.get(
+    final test = await baseDio.get(
       url: '',
     );
 
-    tes.map(
+    test.map(
       success: (data) {},
       failure: (error) {
         expect(
