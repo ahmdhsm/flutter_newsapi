@@ -1,0 +1,1 @@
+const defaultCategory = 'android';
